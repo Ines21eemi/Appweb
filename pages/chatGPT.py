@@ -5,7 +5,7 @@ openai_key = st.sidebar.text_input("Tapez une clé OpenAI")
 
 import os
 from openai import OpenAI
-client = OpenAI(api_key=Openai_key)
+client = OpenAI(api_key=openai_key)
 chat_completion = client.chat.completions.create(
     messages=[
          {
