@@ -6,13 +6,13 @@ st.title("Dall-e 3")
 user_input = st.text_input("Open IA")
 st.write(user_input)
 
-#Cla clé OpenAI
+#La clé OpenAI
 recherche_input = st.sidebar.text_input("La clé OpenAI")
 st.write(recherche_input)
 
 #Intéraction avec OpenAI
 from openai import OpenAI
-client = OpenAI(api_key=sidebar_input)
+client = OpenAI(api_key=recherche_input)
 
 prompt = "A cute baby sea otter"
 
