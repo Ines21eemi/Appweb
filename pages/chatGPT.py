@@ -54,7 +54,7 @@ chat_completion = client.chat.completions.create(
         },
          {
             "role": "user",
-            "content": prompt,
+            "content": user_input,
         },
     ],
     model="gpt-3.5-turbo",
