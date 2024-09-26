@@ -1,22 +1,21 @@
 import streamlit as st
-#titre
-st.title ("Dall-e 3")
 
-#champ de saisi
-user_input = st.text_input ("Open IA")
+st.title("Dall-e 3")
+
+#Champ de saisie
+user_input = st.text_input("Open IA")
 st.write(user_input)
 
-recherche_input = st.sidebar.text_input("Clé")
+#Cla clé OpenAI
+recherche_input = st.sidebar.text_input("La clé OpenAI")
 st.write(recherche_input)
 
-#sidebar
-st.sidebar 
-
-#clé
+#Intéraction avec OpenAI
 from openai import OpenAI
-st.sidebar
-client = OpenAI(api_key=OpenAIKEY)
+client = OpenAI(api_key=sidebar_input)
+
 prompt = "A cute baby sea otter"
+
 image = client.images.generate(
     model="dall-e-2",
     prompt=user_input,
@@ -25,4 +24,3 @@ image = client.images.generate(
     n=1,
 )
 image_url = image.data[0].url
-print(image_url)
