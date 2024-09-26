@@ -12,3 +12,7 @@ st.image("https://www.mercedes-benz-mag.fr/wp-content/uploads/2021/09/HP-img-168
 st.sidebar.title ("Ines Romain")
 #Video dans la sidebar
 st.sidebar.video("https://www.youtube.com/watch?v=lofb298wDFc")
+#Select Bare
+student_grad = st.selectbox("Slectionnez votre niveau d'étude", ["bac"],["bac +1"],["bac +2])
+#Select slider
+age = st.select_slider("Quel est votre age", range(0,99))
