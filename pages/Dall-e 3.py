@@ -3,7 +3,7 @@ import streamlit as st
 st.title ("Dall-e 3")
 
 #champ de saisi
-user_input : st.text_input ("Open IA")
+user_input = st.text_input ("Open IA")
 st.write(user_input)
 
 recherche_input : st.sidebar.text_input("Clé")
