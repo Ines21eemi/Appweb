@@ -6,7 +6,7 @@ st.title ("Dall-e 3")
 user_input = st.text_input ("Open IA")
 st.write(user_input)
 
-recherche_input : st.sidebar.text_input("Clé")
+recherche_input = st.sidebar.text_input("Clé")
 st.write(recherche_input)
 
 #sidebar
